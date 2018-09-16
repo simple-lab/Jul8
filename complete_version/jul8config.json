@@ -1,15 +1,15 @@
 {
   "header": [
-    "/// <reference path='lib/jul8.ts' />",
-    "/// <reference path='lib/jquery.d.ts' />",
+    "/// <reference path='./lib/jul8.ts' />",
+    "/// <reference path='./lib/jquery.d.ts' />",
     ""
   ],
   "footer": [
   ],
   "build": [
     {
-      "source": "templates/templates.html",
-      "target": "ts/templates.g.ts"
+      "source": "./templates/templates.html",
+      "target": "./ts/templates.g.ts"
     }
   ]
 }
