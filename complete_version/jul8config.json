@@ -8,8 +8,8 @@
   ],
   "build": [
     {
-      "source": "./templates/templates.html",
-      "target": "./ts/templates.g.ts"
+      "source": "./templates.html",
+      "target": "./templates.g.ts"
     }
   ]
 }
