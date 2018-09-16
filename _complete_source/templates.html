@@ -1,0 +1,45 @@
+﻿<!-- 개발 환경 구축 예제 템플릿 -->
+<div j8-template="ButtonGroup">
+    <button type="button" j8-control="left">Left Button</button>
+    <button type="button" j8-control="middle">Middle Button</button>
+    <button type="button" j8-control="right">Right Button</button>
+</div>
+
+
+<!-- TODO 앱 만들기 예제 템플릿 -->
+
+<!-- 앱의 헤더 부분 -->
+<div class="app-title" j8-template="AppTitle">
+    TODO LIST
+</div>
+
+<!-- TODO 그룹 -->
+<div class="todos-group" j8-template="TodosGroup">
+
+    <!-- TODO 리스트를 추가하는 컨트롤러 -->
+    <div class="todos-add">
+        <input type="text" j8-control="inputContent" placeholder="추가할 TODO 리스트" />
+        <button j8-control="addBtn"><i class="material-icons">add</i></button>
+    </div>
+
+    <!-- TODO 리스트 컨트롤러 -->
+    <ul class="todos-list" j8-control="todosList">
+        <li class="todo-item" j8-listItem="TodoItem" j8-model="todoModel">
+            <div j8-control="todoCheckBtn">
+                <input type="checkbox" j8-control="todoCheckState" />
+                <i class="material-icons">check_box_outline_blank</i>
+                <i class="material-icons" style="display: none;">check_box</i>
+            </div>
+            <div j8-control="todoContent">{{ content }}</div>
+            <div j8-control="todoRemoveBtn">
+                <i class="material-icons">remove</i>
+            </div>
+        </li>
+    </ul>
+
+    <!-- TODO 리스트 모두 삭제하는 컨트롤러 -->
+    <div class="flexbox">
+        <button class="clear-all-btn" j8-control="clearAll">Clear All</button>
+    </div>
+
+</div>
