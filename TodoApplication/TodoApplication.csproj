@@ -86,7 +86,7 @@
     <TypeScriptCompile Include="ts\App.ts" />
     <TypeScriptCompile Include="ts\lib\jquery.d.ts" />
     <TypeScriptCompile Include="ts\lib\jul8.ts" />
-    <TypeScriptCompile Include="ts\main.ts" />
+    <TypeScriptCompile Include="ts\Main.ts" />
     <TypeScriptCompile Include="ts\templates.g.ts" />
   </ItemGroup>
   <ItemGroup>

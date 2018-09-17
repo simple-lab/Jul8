@@ -1,4 +1,5 @@
-﻿type todoModel = {
+﻿// 반드시 j8-model마다 type aliases를 선언해줘야 합니다.
+type todoModel = {
     content: string;
 }
 
